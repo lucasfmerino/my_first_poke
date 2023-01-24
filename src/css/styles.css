@@ -1,0 +1,104 @@
+
+:root {
+    --font-concert: 'Concert One', cursive;
+    --font-start: 'Press Start 2P', cursive;
+}
+
+
+/* ---------------------------------------------------- */
+body {
+    background-image: url(../images/home-background.jpg);
+    background-color: rgb(80, 15, 69);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.header-container {
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header-img {
+    background-color: rgb(56, 2, 2);
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+
+}
+
+.header-title {
+    background-color: rgb(241, 143, 163);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-concert);
+    font-size: 64px;
+    
+}
+
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+.main-container {
+
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container {
+    background-color: green;
+    height: 400px;
+    width: 360px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-img{
+    background-color: rgb(0, 255, 149);
+    width: 360px;
+    height: 360px;
+    margin: 5px;
+}
+
+.article-content {
+    background-color: rgb(4, 73, 7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-start);
+    font-size: 24px;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+.footer-container {
+    background-color: darkturquoise;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-concert);
+    font-size: 48px;
+
+
+}
