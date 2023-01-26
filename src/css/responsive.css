@@ -85,6 +85,30 @@
         width: 200px;
         height: 170px;
     }
+
+    .message.container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .main-message {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        gap: 30px
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
 }
 
 
@@ -133,6 +157,7 @@
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
+        width: 100%;
         gap: 30px
     }
 
