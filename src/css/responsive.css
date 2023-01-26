@@ -1,0 +1,147 @@
+@media (max-width: 1280px) {
+
+    * {
+        overflow: none;
+        overflow-x: none;
+    }
+
+    body {
+        background-color: rgb(255, 254, 174);
+    }
+
+    .video-background .video {
+        height: auto;
+    }
+
+    .header-main {
+        padding: 30px;
+        height: 400px;
+        gap: 30px
+    }
+
+    .header-logo {
+        height: 100px;
+        width: 260px;
+    }
+    
+    .header-pokemon-logo {
+        width: 240px;
+    }
+
+    .header-title {
+
+        font-size: 24px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .main-container {
+
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .article-container {
+        /* background-color: green; */
+        height: 270px;
+        width: 300px;
+        margin: 50px;
+    }
+
+    .article-img{
+        width: 300px;
+        height: 270px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .body-video {
+        opacity: 0%;
+    }
+
+    .body-background {
+        opacity: 60;
+    }
+
+    .article-container {
+        /* background-color: green; */
+        height: 270px;
+        width: 200px;
+        margin: 50px;
+    }
+
+    .article-img{
+        width: 200px;
+        height: 170px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .header-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        flex-direction: column;
+    }
+    
+
+    .header-pokemon-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 80px;
+    }
+
+    .header-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 80px;
+    }
+
+    .message.container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .main-message {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+}
