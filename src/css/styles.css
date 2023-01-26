@@ -7,16 +7,18 @@
 
 /* ---------------------------------------------------- */
 body {
-    background-color: rgb(255, 217, 0);
+    background-color: rgb(0, 119, 255);
 }
 
 .body-background {
     position: absolute;
-    z-index: -3;
+    z-index: -1;
     height: 100vh;
-    width: 100%;
+    width: 100% ;
     display: flex;
     justify-content: center;
+    opacity: 60%;
+    overflow: hidden;
 }
 
 .body-video {
@@ -27,7 +29,9 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    opacity: 55%;
+    opacity: 80%;
+    mask-border-outset: initial;
+    overflow: hidden;
 }
 
 .video {
@@ -41,20 +45,20 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 12%, rgba(255,234,0,0.9326995481927711) 25%, rgba(255,229,0,0.13877279635258355) 41%, rgba(255,255,255,0.023271276595744683) 50%, rgba(170,144,185,0.30594604863221886) 59%, rgba(78,24,109,0.8560980243161094) 75%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 130px;
 }
 
 .header-background {
     position: absolute;
     z-index: -1;
     height: 150px;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -66,15 +70,30 @@ body {
     width: 360px;
 }
 
-.header-title {
-
+.header-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+.header-title {
+    color: rgb(253, 207, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-concert);
-    font-size: 64px;
-    
+    font-family: var(--font-start);
+    font-size: 48px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    text-shadow: -2px -2px 0px rgb(46, 22, 255), 
+    -2px 2px 2px rgb(46, 22, 255),                    
+     2px -2px 0px rgb(46, 22, 255),                  
+     2px 0px 0px rgb(46, 22, 255);
+
+}
+
+.header-pokemon-logo {
+    width: 480px;
 }
 
 
@@ -82,44 +101,104 @@ body {
 
 /* ---------------------------------------------------- */
 
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .main-container {
 
-    height: calc(100vh - 200px);
+    height: calc(100vh - 390px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .article-container {
-    background-color: green;
-    height: 400px;
-    width: 360px;
+    /* background-color: green; */
+    height: 360px;
+    width: 400px;
     margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 360ms all ease-in-out;
 }
 
 .article-img{
-    background-color: rgb(0, 255, 149);
     width: 360px;
     height: 360px;
     margin: 5px;
+    border-radius: 100px;
+    border: 10px;
+    border-style: groove;
+    border-color: rgb(0, 100, 255);
+    box-shadow: -10px 5px rgba(0, 0, 0, .3);
+    transition: 360ms all ease-in-out;
 }
 
 .article-content {
-    background-color: rgb(4, 73, 7);
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--font-start);
     font-size: 24px;
+    border-radius: 30px;
 }
 
+.article-button {
+    font-family: var(--font-start);
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: 5px;
+    border-style: groove;
+    border-color: rgb(0, 100, 255);
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    box-shadow: -10px 5px rgba(0, 0, 0, .3);
+    transition: 360ms all ease-in-out;
+}
+
+.article-container:hover {
+    transform: scale(1.3);
+}
+
+
+.article-button:hover {
+    background-color: rgb(255, 183, 0);
+    color: rgb(8, 115, 255);
+    transform: rotateX(360deg);
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-start);
+}
+
+.main-message {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: cornflowerblue;
+
+}
+
+.main-message-img {
+    height: 140px;
+}
 
 
 /* ---------------------------------------------------- */

@@ -20,7 +20,7 @@
 <body>
 
     <div class="body-background">
-        <img class=""background src="./src/images/news-background.png" alt="">
+        <img class=""background src="./src/images/news-background.png" alt="background">
     </div>
 
     <div class="body-video">
@@ -32,37 +32,53 @@
     <header class="header-container">
         <img class="header-background" src="./src/images/header-background.png" alt="">
         <img  class="header-logo" src="./src/images/logo.png" alt="logo">
-        <h1 class="header-title">My first Poke</h1>
+        <div class="header-main">
+            <h1 class="header-title">
+                My first
+            </h1>
+            <img src="./src/images/header-pokémon_logo.png" alt="pokemon-logo" class="header-pokemon-logo">
+        </div>
     </header>
 
-    <main class="main-container">
-        <article class="article-container">
-            <img class="article-img" src="" alt="IMAGEM">
-            <div class="article-content">
-                <p>NOME DA AREA</p>
+    <div class="content">
+        <main class="main-container">
+            <article class="article-container">
+                <img class="article-img" src="./src/images/area-kanto.png" alt="kanto">
+                <div class="article-content">
+                    <button class="article-button">Kanto</button>
+                </div>
+            </article>
+
+            <article class="article-container">
+                <img class="article-img" src="./src/images/area-johto.png" alt="johto">
+                <div class="article-content">
+                    <button class="article-button">Johto</button>
+                </div>
+            </article>
+
+            <article class="article-container">
+                <img class="article-img" src="./src/images/area-hoenn.png" alt="hoenn">
+                <div class="article-content">
+                    <button class="article-button">Hoenn</button>
+                </div>
+            </article>
+        </main>
+
+        <div class="message-container">
+            <div class="main-message">
+                <img class="main-message-img" src="./src/images/professor-oak.png" alt="Professor Oak">
+                <div class="message">
+                    <h2>Choose the starting area</h2>
+                </div>
             </div>
-        </article>
-
-        <article class="article-container">
-            <img class="article-img" src="" alt="IMAGEM">
-            <div class="article-content">
-                <p>NOME DA AREA</p>
-            </div>
-        </article>
-
-        <article class="article-container">
-            <img class="article-img" src="" alt="IMAGEM">
-            <div class="article-content">
-                <p>NOME DA AREA</p>
-            </div>
-        </article>
-
-
-    </main>
+        </div>
+    </div>
 
     <footer class="footer-container">
-        <img class="footer-background" src="./src/images/footer-background.png" alt="">
-        <h2>Choose the starting area</h2>
+        <p>
+            Fan site de Pokemon<br>
+            Conheça os pokemons inicias das três primeiras gerações
+        </p>
     </footer>
 
 </body>
